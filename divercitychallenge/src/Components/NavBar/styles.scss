@@ -1,0 +1,23 @@
+@import "../../utils/colors";
+@import "../../utils/mixins.scss";
+
+.nav {
+  // background-color: $tar-heel;
+  width: 100%;
+  float: right;
+  list-style-type: none;
+  margin: 0 0 3em 0;
+  padding: 0;
+
+  &__jobs,
+  &__login,
+  &__register,
+  a {
+    @include font;
+    color: $tar-heel;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    float: right;
+  }
+}

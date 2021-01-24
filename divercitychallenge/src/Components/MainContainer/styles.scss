@@ -1,0 +1,19 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/colors.scss";
+.mainContainer {
+  &__container {
+    border: 3px solid gray;
+    width: 200px;
+    height: 250px;
+    margin-left: 130px;
+    border-radius: 20px 2px 20px 2px;
+    padding: 25px;
+    background-color: cornsilk;
+    @include font;
+  }
+
+  &__learnLink {
+    text-decoration: none;
+    color: $tar-heel;
+  }
+}

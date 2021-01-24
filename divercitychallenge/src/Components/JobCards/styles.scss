@@ -1,0 +1,59 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/colors";
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+
+  &__column {
+    list-style-type: none;
+
+    width: 50%;
+  }
+
+  &__li {
+    list-style-type: none;
+    padding: 30px;
+    border: 3px solid gray;
+    border-radius: 23px;
+    background-color: cornsilk;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 14px;
+  }
+
+  &__company {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 22px;
+  }
+  &__location {
+    font-style: italic;
+    padding-bottom: 5px;
+  }
+
+  &__description {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  &__count {
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+
+  &__skills {
+    padding-bottom: 15px;
+  }
+  &__apply {
+    @include button;
+  }
+}
+
+.form-control {
+  width: 200px;
+  @include font;
+}

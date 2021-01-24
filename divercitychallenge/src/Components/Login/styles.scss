@@ -1,0 +1,44 @@
+@import "../../utils/mixins.scss";
+@import "../../utils/colors";
+
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 10px solid $tar-heel;
+  padding: 2rem;
+  border-radius: 5px;
+
+  label {
+    display: block;
+    padding: 1rem 0 0.25rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+  }
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    border: 12px solid #2980b9;
+    padding: 0.5rem;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+  }
+}
+
+.button {
+  margin-top: 15px;
+  @include button;
+}
+
+#outer {
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+.login {
+  @include largeFont;
+  font-size: 40px;
+  text-align: center;
+}

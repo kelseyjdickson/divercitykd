@@ -3,7 +3,7 @@ import banner from "./diversity.png";
 
 const Banner = props => {
   const style = {
-    marginLeft: "33%"
+    marginLeft: "5%"
   };
 
   return (
